@@ -6,8 +6,3 @@ phases:
   build:
     commands:
       - echo "Doing nothing this time."
-artifacts:
-  type: zip
-  files:
-    - template.yml
-    - outputtemplate.yml
