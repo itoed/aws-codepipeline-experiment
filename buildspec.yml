@@ -6,3 +6,6 @@ phases:
   build:
     commands:
       - echo "Doing nothing this time."
+artifacts:
+  files:
+    - '**/*'
