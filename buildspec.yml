@@ -3,8 +3,13 @@ phases:
   install:
     runtime-versions:
       nodejs: 10
-    commands:
-      - pip install aws-sam-cli
   build:
     commands:
-      - sam package --template-file template.yml --output-template-file package.yml --s3-bucket aws-codepipeline-experiment
+      - echo "Doing nothing this time."
+artifacts:
+  files:
+    - 'afterAllowTraffic.js'
+    - 'beforeAllowTraffic.js'
+    - 'index.js'
+    - 'myDateTimeFunction.js'
+    - 'template.yml'
