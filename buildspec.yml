@@ -2,12 +2,14 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-        nodejs: 10
+      nodejs: 10
   build:
     commands:
       - echo "Doing nothing this time."
 artifacts:
-  type: zip
   files:
-    - template.yml
-    - outputtemplate.yml
+    - 'afterAllowTraffic.js'
+    - 'beforeAllowTraffic.js'
+    - 'index.js'
+    - 'myDateTimeFunction.js'
+    - 'template.yml'
